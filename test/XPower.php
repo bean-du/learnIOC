@@ -10,8 +10,15 @@ namespace test;
 
 class XPower implements SuperModel
 {
+    protected  $target;
     public function activate(array $target)
     {
-        
+        $this->target = $target;
+        return $this;
+    }
+
+    public function shot()
+    {
+        var_dump('this is from XPower module :'.$this->target);
     }
 }

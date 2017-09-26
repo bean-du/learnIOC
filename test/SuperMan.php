@@ -13,8 +13,13 @@ class SuperMan
 {
     protected $module;
 
-    public function __construct(SuperModel $model)
+    public function __construct(XPower $model)
     {
-        
+        $this->module = $model;
+    }
+
+    public function XPower()
+    {
+        $this->module->activate(['1' => 'test]'])->shot();
     }
 }
