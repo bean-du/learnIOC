@@ -20,6 +20,6 @@ class SuperMan
 
     public function XPower()
     {
-        $this->module->activate(['1' => 'test]'])->shot();
+        $this->module->activate(['1' => 'test'])->shot();
     }
 }

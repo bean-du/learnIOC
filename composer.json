@@ -1,0 +1,17 @@
+{
+    "name": "bean/learn-ioc",
+    "authors": [
+        {
+            "name": "Acorn",
+            "email": "binit@sina.cn"
+        }
+    ],
+    "require": {},
+    "autoload" : {
+        "psr-4" : {
+            "Container\\" : "Container",
+            "ServiceProvider\\" : "ServiceProvider",
+            "test\\" : "test"
+        }
+    }
+}

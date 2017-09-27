@@ -29,6 +29,12 @@ class Container implements ContainerContract
 
     public function make($abstract,$parameters = [])
     {
+        if (isset($this->instances[$abstract])){
+            return $this->instances[$abstract];
+        }
 
+        array_unshift($parameters,$this);
+        //var_dump($parameters);exit;
+        return call_user_func_array($this->binds[$abstract],$parameters);
     }
 }

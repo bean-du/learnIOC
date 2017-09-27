@@ -19,6 +19,6 @@ class XPower implements SuperModel
 
     public function shot()
     {
-        var_dump('this is from XPower module :'.$this->target);
+        var_dump($this->target);
     }
 }
